@@ -1,0 +1,48 @@
+pipeline{
+agent any
+stages
+{
+stage('maven clean')
+{
+steps{
+echo "cleaning the project"
+}
+}
+stage('maven validate')
+{
+steps{
+echo "validating the project"
+}
+}
+stage('maven compile')
+{
+steps{
+echo "compiling the project"
+}
+}
+stage('maven test')
+{
+steps{
+echo "testing the project"
+}
+}
+stage('maven package')
+{
+steps{
+echo "packaging the project"
+}
+}
+stage('maven install')
+{
+steps{
+echo "installing the project"
+}
+}
+stage('maven deploy')
+{
+steps{
+echo "deploying the project"
+}
+}
+}
+}
